@@ -22,29 +22,6 @@
 				<rich-text :nodes="notice"></rich-text>
 			</view>
 		</u-modal>
-		<view class="add-tips" :class="isFullscreen ? '' : 'fullscreen'" v-if="addTips">
-			<view class="add-tips-text" v-if="!showTipsText">
-				<view class="arrow"></view>
-				<text @click="showTipsText = true">点击「添加到我的小程序」下次访问不迷路 ></text>
-			</view>
-			<view class="add-tips-step" v-if="showTipsText">
-				<view class="one">
-					<text class="fui-fs16 fui-fw500 fui-mr5">1.点击</text>
-					<image src="https://falost.gitee.io/static/images/fav-01.jpg" mode="widthFix"></image>
-				</view>
-				<view class="two fui-mt5">
-					<text class="fui-fs16 fui-fw500">2.点击「添加到我的小程序」</text>
-					<image src="https://falost.gitee.io/static/images/fav-02.png" mode="widthFix"></image>
-				</view>
-				<view class="three fui-mt5">
-					<text class="fui-fs16 fui-fw500">3.微信首页下拉，找到 falost 快速进入小程序</text>
-					<image src="https://falost.gitee.io/static/images/fav-03.png" mode="widthFix"></image>
-				</view>
-				<view class="know">
-					<u-button type="primary" text="朕知道了!" shape="circle" @click="closeTips"></u-button>
-				</view>
-			</view>
-		</view>
 	</view>
 </template>
 <script>

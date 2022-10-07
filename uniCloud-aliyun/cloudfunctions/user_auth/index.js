@@ -5,7 +5,7 @@ const uniAccount = require('uni-account');
 const {
 	getConfigKey
 } = require('utils')
-const ISOPEN = true
+const ISOPEN = false
 exports.main = async (event, context) => {
 	let appId
 	let appSecret
